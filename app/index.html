@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>angular</title>
+        <link rel="stylesheet" href="./../bower_components/angular-material/angular-material.css" media="screen" title="no title">
+        <script src="./../bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./../bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="./../bower_components/angular-aria/angular-aria.min.js"></script>
+        <script type="text/javascript" src="./../bower_components/angular-messages/angular-messages.min.js"></script>
+        <script type="text/javascript" src="./../bower_components/angular-material/angular-material.min.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+    </head>
+    <body ng-controller='myController'>
+        <div>
+            <h1>My first angular app by
+                {{name}}</h1>
+        </div>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+            <md-button class="md-raised">Button</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>
+            <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+            <md-button class="md-raised md-warn">Warn</md-button>
+            <div class="label">Raised</div>
+        </section>
+
+    </body>
+</html>
