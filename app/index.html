@@ -10,20 +10,29 @@
         <script type="text/javascript" src="./../bower_components/angular-messages/angular-messages.min.js"></script>
         <script type="text/javascript" src="./../bower_components/angular-material/angular-material.min.js"></script>
         <script type="text/javascript" src="./app.js"></script>
+        <style media="screen">
+          input {margin:10px};
+        </style>
     </head>
     <body ng-controller='myController'>
         <div>
             <h1>My first angular app by
                 {{name}}</h1>
         </div>
+        <div>
+          <input type="text" ng-model="name">
+        </div>
+        <div>
+          Echo: {{name}}
+        </div>
 
-        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+        <!-- <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
             <md-button class="md-raised">Button</md-button>
             <md-button class="md-raised md-primary">Primary</md-button>
             <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
             <md-button class="md-raised md-warn">Warn</md-button>
             <div class="label">Raised</div>
-        </section>
+        </section> -->
 
     </body>
 </html>
