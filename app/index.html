@@ -11,19 +11,25 @@
         <script type="text/javascript" src="./../bower_components/angular-material/angular-material.min.js"></script>
         <script type="text/javascript" src="./app.js"></script>
         <style media="screen">
-          input {margin:10px};
+            div {
+                margin: 10px;
+            };
         </style>
     </head>
     <body ng-controller='myController'>
         <div>
-            <h1>My first angular app by
-                {{name}}</h1>
+            <input type="text" ng-model="name">
         </div>
         <div>
-          <input type="text" ng-model="name">
+            Echo:
+            {{name}}
         </div>
         <div>
-          Echo: {{name}}
+            <button type="button" name="button" ng-click="showWatchers()">#number of watchers</button>
+        </div>
+
+        <div>
+          <button type="button" ng-click="showConstant()">#increment Counter</button>
         </div>
 
         <!-- <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
