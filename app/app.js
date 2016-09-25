@@ -7,14 +7,21 @@
             console.log($scope);
         }
         $scope.oneConstant = 1;
+        $scope.counter = 1;
 
         $scope.showConstant = function() {
-          $scope.oneConstant++;
+          setTimeout(function(){
+            $scope.counter++;
+          }, 2000);
         }
 
         $scope.$watch('oneConstant', function(newValue,oldValue){
           console.log("old value :" + oldValue);
           console.log("new value :" + newValue);
+        })
+
+        $scope.$watch(function(){
+          console.log("digest looop fired");
         })
     }]);
 
